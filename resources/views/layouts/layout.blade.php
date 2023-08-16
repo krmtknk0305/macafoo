@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
   <link rel="stylesheet" href="{{ asset('css/style.css') }}">
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="./js/script.js"></script>
+  <script src="{{ asset('js/script.js') }}"></script>
 </head>
 <body>
   <header>
