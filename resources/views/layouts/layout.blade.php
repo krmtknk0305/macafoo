@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
   <link rel="stylesheet" href="{{ asset('css/common.css') }}">
   <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/other.css') }}">
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="{{ asset('js/script.js') }}"></script>
 </head>
@@ -31,20 +32,18 @@
   @yield('content')
   <footer>
     <div class="container">
-      <div class="footer-content">
-        <div class="logo-wrapper">
-          <a href="#" class="logo">macahoo</a>
-          <div class="sns-block">
-            <a class="mark" href="https://twitter.com/" target="_blank">
-              <img class="sns-mark" src="./image/twitter_mark.png" alt="twitter" width="30px">
-            </a>
-            <a class="mark" href="https://www.facebook.com/" target="_blank">
-              <img class="sns-mark" src="./image/facebook_mark.png" alt="facebook" width="30px">
-            </a>
-            <a class="mark" href="https://www.instagram.com/" target="_blank">
-              <img class="sns-mark" src="./image/instagram_mark.png" alt="instagram" width="30px">
-            </a>
-          </div>
+      <div class="logo-wrapper">
+        <a href="#" class="logo">macahoo</a>
+        <div class="sns-block">
+          <a class="mark" href="https://twitter.com/" target="_blank">
+            <img class="sns-mark" src="./image/twitter_mark.png" alt="twitter" width="30px">
+          </a>
+          <a class="mark" href="https://www.facebook.com/" target="_blank">
+            <img class="sns-mark" src="./image/facebook_mark.png" alt="facebook" width="30px">
+          </a>
+          <a class="mark" href="https://www.instagram.com/" target="_blank">
+            <img class="sns-mark" src="./image/instagram_mark.png" alt="instagram" width="30px">
+          </a>
         </div>
       </div>
       <small>© 2023 Mayu Sato</small>

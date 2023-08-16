@@ -1,13 +1,12 @@
 @charset "UTF-8";
 
-/* 共通部 */
+/* 基本スタイル */
 html {
   font-size: 16px;
 }
 
 body {
   color: #fff;
-  font-size: 1rem;
   font-family: "YuGothic", Yu Gothic, sans-serif;
   background-image: url(../image/smoke.jpg);
   background-attachment: fixed;
@@ -31,38 +30,6 @@ a:hover {
   transition: 0.6s;
 }
 
-section {
-  padding: 4rem 0 2rem 0;
-}
-
-.container {
-  max-width: 1024px;
-  width: 90%;
-  margin: 0 auto;
-}
-
-h1 {
-  font-size: 4rem;
-}
-
-h2 {
-  font-size: 2rem;
-  margin-bottom: -5px;
-}
-
-.ja-title {
-  font-size: 1rem;
-}
-
-.title {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.about-text {
-  letter-spacing: 0.8px;
-}
-
 .button a {
   color: #524439;
   background-color: #edf7d2;
@@ -82,13 +49,31 @@ h2 {
   transition: 0.2s;
 }
 
+section {
+  padding: 4rem 0 2rem 0;
+}
+
+.container {
+  max-width: 1024px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
 /* グローバルナビゲーション */
 .g-navi {
   position: fixed;
   background-color: #524439;
   width: 100%;
-  z-index: 1000;
-  box-shadow: 0 1rem 2rem hsl(0 0% 0% / 20%);
+  z-index: 500;
+  box-shadow: 0 1rem 2rem hsl(0 0% 0% / 50%);
 }
 
 .g-navi ul {
@@ -111,4 +96,51 @@ h2 {
 .g-navi ul li a:hover {
   color: #524439;
   background-color: #edf7d2;
+}
+
+/* フッター */
+footer {
+  position: relative;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: radial-gradient(#eb9849 30%, transparent 30%);
+  background-repeat: repeat;
+  background-size: 4px 4px;
+  transform: skewY(-5deg);
+  z-index: -1;
+}
+
+.logo-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: end;
+}
+
+.logo {
+  font-size: 2rem;
+  color: #fff;
+  margin-right: 24px;
+}
+
+.sns-block {
+  margin-top: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.mark {
+  margin-left: 0.4rem;
+}
+
+footer small {
+  display: block;
+  text-align: right;
 }

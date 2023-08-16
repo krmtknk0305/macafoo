@@ -1,5 +1,18 @@
 @charset "UTF-8";
 
+.ja-title {
+  font-size: 1rem;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-text {
+  letter-spacing: 0.8px;
+}
+
 /* ファーストビュー */
 .mv-wrapper {
   position: relative;
@@ -352,55 +365,6 @@ textarea {
 
 .about-box {
   margin: 2rem;
-}
-
-/* フッター */
-footer {
-  position: relative;
-  padding-bottom: 8rem;
-  height: 6rem;
-}
-
-footer::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-image: radial-gradient(#eb9849 30%, transparent 30%);
-  background-repeat: repeat;
-  background-size: 4px 4px;
-  transform: skewY(-5deg);
-  z-index: -1;
-}
-
-.logo-wrapper {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: end;
-}
-
-.logo {
-  font-size: 2rem;
-  color: #fff;
-  margin-right: 24px;
-}
-
-.sns-block {
-  margin-top: 8px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.mark {
-  margin-left: 0.4rem;
-}
-
-footer small {
-  display: block;
-  text-align: right;
 }
 
 /* 確認画面 */
