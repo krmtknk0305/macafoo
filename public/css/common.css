@@ -37,7 +37,7 @@ a:hover {
   padding: 1rem 3rem;
   border-radius: 3rem;
   text-align: center;
-  box-shadow: 0 1rem 2rem hsl(0 0% 0% / 20%);
+  box-shadow: 0 1rem 2rem hsl(0 0% 0% / 50%);
   display: block;
 }
 
@@ -51,6 +51,11 @@ a:hover {
 
 section {
   padding: 4rem 0 2rem 0;
+}
+
+p {
+  line-height: 180%;
+  padding: 4px 16px;
 }
 
 .container {
@@ -101,6 +106,7 @@ h2 {
 /* フッター */
 footer {
   position: relative;
+  height: 180px;
 }
 
 footer::before {
@@ -121,6 +127,7 @@ footer::before {
   display: flex;
   flex-wrap: nowrap;
   justify-content: end;
+  padding-top: 24px;
 }
 
 .logo {
@@ -132,7 +139,6 @@ footer::before {
 .sns-block {
   margin-top: 8px;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
 }
 

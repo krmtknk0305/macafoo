@@ -1,22 +1,15 @@
 @charset "UTF-8";
 
-.ja-title {
-  font-size: 1rem;
-}
-
 .title {
   text-align: center;
   margin-bottom: 40px;
-}
-
-.about-text {
-  letter-spacing: 0.8px;
 }
 
 /* ファーストビュー */
 .mv-wrapper {
   position: relative;
   height: 64vh;
+  margin-bottom: 64px;
 }
 
 .mv-left {
@@ -47,16 +40,12 @@
 
 .concept-copy {
   text-align: center;
+  margin-bottom: 64px;
 }
 
 .main-copy {
   font-size: 1.5rem;
-  margin-bottom: 64px;
-}
-
-.concept-text {
-  margin-bottom: 24px;
-  line-height: 1.8;
+  margin-bottom: 56px;
 }
 
 /* こだわり */
@@ -81,13 +70,12 @@
   border-radius: 40%;
   width: 400px;
   object-fit: cover;
-  margin-left: 80px;
-  box-shadow: 0 1rem 2rem hsl(0 0% 0% / 20%);
+  box-shadow: 0 1rem 2rem hsl(0 0% 0% / 50%);
 }
 
 .feature-image:hover {
-  transform: translateY(-5px);
-  transition: 0.2s;
+  transform: translateY(-8px);
+  transition: 0.3s;
 }
 
 .feature-box {
@@ -109,7 +97,6 @@
   margin: 0 3rem;
   display: flex;
   flex-wrap: nowrap;
-  align-items: center;
   justify-content: center;
 }
 
@@ -124,8 +111,8 @@
   background-image: url("../image/recommend.png");
   background-size: cover;
   background-position: right;
-  padding: 4rem;
-  box-shadow: 0 1rem 2rem hsl(0 0% 0% / 20%);
+  padding: 3rem;
+  box-shadow: 0 1rem 2rem hsl(0 0% 0% / 50%);
   border-radius: 4rem;
 }
 
@@ -134,6 +121,7 @@
   transition: 0.2s;
 }
 
+/* おすすめモーダル */
 .recommend-wrapper {
   display: flex;
   flex-wrap: nowrap;
@@ -148,7 +136,7 @@
   margin: 2em auto;
   padding: 1.5em 1em;
   transform: rotate(-2deg);
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 20%);
   color: #524439;
 }
 
@@ -161,12 +149,8 @@
   width: 150px;
   height: 30px;
   background: rgba(245, 245, 245, 0.7);
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 50%);
   transform: rotate(-4deg);
-}
-
-.recommend-text {
-  padding: 1rem;
 }
 
 .recommend-set {
@@ -175,7 +159,6 @@
   text-align: center;
 }
 
-/* おすすめモーダル */
 .modal-main {
   position: fixed;
   inset: 0;
@@ -187,7 +170,6 @@
 }
 
 .inner {
-  padding: 1rem;
   max-width: 840px;
   margin: 120px auto;
   background-image: url(../image/berry2.jpg);
@@ -201,13 +183,14 @@
   width: fit-content;
   position: absolute;
   right: -24px;
-  top: -24px;
+  top: -44px;
 }
 
 
 /* お買い物 */
 #store {
   position: relative;
+  text-align: center;
 }
 
 #store::before {
@@ -224,18 +207,8 @@
   z-index: -1;
 }
 
-.store-about {
-  margin-top: 32px;
-  text-align: center;
-}
-
-.store-text {
-  margin-bottom: 24px;
-  line-height: 1.8;
-}
-
 .store-btn {
-  margin: auto;
+  margin: 24px auto;
   width: 320px;
 }
 
@@ -328,7 +301,7 @@ textarea {
   margin: 0 auto;
   color: #524439;
   transition: 0.6s;
-  box-shadow: 0 1rem 2rem hsl(0 0% 0% / 20%);
+  box-shadow: 0 1rem 2rem hsl(0 0% 0% / 50%);
 }
 
 .send-button:hover {
