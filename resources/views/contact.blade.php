@@ -56,8 +56,8 @@
                 <input type="hidden" name="title" value="{{ $title }}">
                 <input type="hidden" name="about" value="{{ $about }}">
                 <div class="confirm-btn">
-                    <input type="button" class="back" onclick="history.back()" value="変更">
-                    <input type="submit" class="submit" value="送信">
+                    <input type="button" class="send-button" onclick="history.back()" value="戻る">
+                    <input type="submit" class="send-button" value="送信">
                 </div>
             </form>
         </div>

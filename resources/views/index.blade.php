@@ -173,7 +173,7 @@
     </div>
     <div class="about-box">
       <p>制作：佐藤舞祐（さとうまゆ）</p>
-      <p>制作工数：8/15現在で7人日 ※8時間を1人日とする。</p>
+      <p>制作工数：8/17現在で8人日 ※8時間を1人日とする。</p>
       <p>開発環境</p>
       <p>OS：Windows、Linux</p>
       <p>言語：HTML、CSS、PHP(Laravel)、JavaScript、jQuery</p>

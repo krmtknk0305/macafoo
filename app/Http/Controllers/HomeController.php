@@ -36,6 +36,5 @@ class HomeController extends Controller
     $contact->save();
 
     return view('send');
-
   }
 }
