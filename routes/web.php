@@ -19,3 +19,6 @@ Route::get('/', function () {
 });
 
 Route::get('/index','App\Http\Controllers\HomeController@home');
+Route::post('/contact','App\Http\Controllers\HomeController@create');
+Route::get('/send','App\Http\Controllers\HomeController@store');
+Route::post('/send','App\Http\Controllers\HomeController@store');

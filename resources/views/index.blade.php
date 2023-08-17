@@ -125,7 +125,8 @@
     </div>
     <div class="form">
       <p>お席のご予約、当店へのお問い合わせはこちらです。<br>3営業日以内に当店からの返信が無かった場合は、お手数ですがお電話くださいませ。</p>
-      <form action="confirm.php" method="post">
+      <form action="contact" method="post">
+        @csrf
         <div class="ct-block">
           <label class="contact-text" for="name">お名前</label>
           <input type="text" name="yourname" required placeholder="例：田中太郎" class="form-name">
@@ -152,6 +153,7 @@
           <label class="contact-text" for="request-about">お問い合わせ内容</label>
           <textarea name="request-about" id="request-about" cols="60" rows="6" placeholder="こちらにご記入お願いします。" required></textarea>
         </div>
+        {{ csrf_field() }}
         <div class="ct-block">
           <input class="send-button" type="submit" value="内容を確認する">
         </div>

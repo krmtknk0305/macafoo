@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/* 確認画面 */
+.confirm-title {
+  text-align: center;
+  margin: 64px 0;
+}
+
+.form-confirm span {
+  display: inline-block;
+  border-bottom: 1px dashed #fff;
+  width: 100%;
+}
+
+.form-confirm li {
+  margin-bottom: 2rem;
+}
+
+.confirm-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.back,
+.submit {
+  color: #524439;
+  background-color: #edf7d2;
+  margin: 2rem;
+  padding: 1rem 3rem;
+  border-radius: 3rem;
+  text-align: center;
+  box-shadow: 0 1rem 2rem hsl(0 0% 0% / 50%);
+  display: block;
+}
+
+.back:hover,
+.submit:hover {
+  color: #fff;
+  background-color: #eb9845;
+  border-radius: 3rem;
+  transform: translateY(5px);
+  transition: 0.2s;
+}
+
+
+/* 受付完了 */
