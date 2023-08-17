@@ -21,27 +21,7 @@
                 </li>
                 <li>
                     <span>主なご用件</span>
-                    <p>
-                        @switch($title)
-                            @case(1)
-                                {{ "お席のご予約について" }}
-                                @break
-                            @case(2)
-                                {{ "サービスについて" }}
-                                @break
-                            @case(3)
-                                {{ "ネットストアのご利用について" }}
-                                @break
-                            @case(4)
-                                {{ "ご購入いただいた商品について" }}
-                                @break
-                            @case(5)
-                                {{ "求人募集について" }}
-                                @break
-                            @case(6)
-                                {{ "その他のお問い合わせ" }}
-                                @break
-                        @endswitch
+                    <p>{{ $title }}</p>
                     </p>
                 </li>
                 <li>

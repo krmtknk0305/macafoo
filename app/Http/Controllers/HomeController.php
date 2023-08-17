@@ -13,9 +13,37 @@ class HomeController extends Controller
   }
 
   public function create(Request $request){
+    $request->validate([
+          'yourname' => ['required|string|max:255|min:1'],
+          'yourmail' => ['required|string|email|max:255|min:4'],
+    ],[
+          'required' => 'この項目は必須です。',
+          'min' => '文字数が足りません。',
+          'max' => '文字数オーバーです（255文字以内）。',
+    ]);
     $name = $request->input('yourname');
     $mail = $request->input('yourmail');
-    $title = $request->input('main-request');
+    $main_request = $request->input('main-request');
+    switch ($main_request) {
+      case '1':
+        $title = 'お席のご予約について';
+        break;
+      case '2':
+        $title = 'サービスについて';
+        break;
+      case '3':
+        $title = 'ネットストアのご利用について';
+        break;
+      case '4':
+        $title = 'ご購入いただいた商品について';
+        break;
+      case '5':
+        $title = '求人募集について';
+        break;
+      case '6':
+        $title = 'その他のお問い合わせ';
+        break;
+    }
     $about = $request->input('request-about');
     return view('contact')->with([
       "name" => $name,

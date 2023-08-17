@@ -32,7 +32,8 @@
     </div>
     <div class="feature-wrapper">
       <div class="feature-box">
-        <img class="feature-image" src="./image/hookah-stand1.jpg" alt="hookeh-feature">
+        <a href ="#">
+          <img class="feature-image" src="./image/hookah-stand1.jpg" alt="hookeh-feature"></a>
         <div class="feature-text">
           <span>Point1</span>
           <h3>シーシャ</h3>
@@ -40,7 +41,8 @@
         </div>
       </div>
       <div class="feature-box">
-        <img class="feature-image" src="./image/macarons2.jpg" alt="macaron-feature">
+        <a href ="#">
+          <img class="feature-image" src="./image/macarons2.jpg" alt="macaron-feature"></a>
         <div class="feature-text">
           <span>Point2</span>
           <h3>マカロン</h3>
@@ -48,7 +50,8 @@
         </div>
       </div>
       <div class="feature-box">
-        <img class="feature-image" src="./image/candle3.jpg" alt="floor-feature">
+        <a href ="#">
+          <img class="feature-image" src="./image/candle3.jpg" alt="floor-feature"></a>
         <div class="feature-text">
           <span>Point3</span>
           <h3>空間</h3>
@@ -67,13 +70,13 @@
     <p>シーシャ、マカロン、ドリンクのメニューはこちらからどうぞ。</p>
     <div class="btn-wrapper">
       <div class="button">
-        <a>シーシャフレーバー</a>
+        <a href ="#">シーシャフレーバー</a>
       </div>
       <div class="button">
-        <a>マカロン</a>
+        <a href ="#">マカロン</a>
       </div>
       <div class="button">
-        <a>ドリンク</a>
+        <a href ="#">ドリンク</a>
       </div>
     </div>
   </div>
@@ -113,7 +116,7 @@
     <p>シーシャフレーバーやマカロン・その他人間界では馴染みのないあれこれ、取り揃えました。</p>
     <p>今では大変便利にお買い物ができるそうですね。<br>文明の進化とは素晴らしいものです。</p>
     <div class="button store-btn">
-      <a>macahooのストアへ</a>
+      <a href ="#">macahooのストアへ</a>
     </div>
   </div>
 </section>
@@ -175,7 +178,7 @@
       <p>制作：佐藤舞祐（さとうまゆ）</p>
       <p>制作工数：8/17現在で8人日 ※8時間を1人日とする。</p>
       <p>開発環境</p>
-      <p>OS：Windows、Linux</p>
+      <p>OS：Windows</p>
       <p>言語：HTML、CSS、PHP(Laravel)、JavaScript、jQuery</p>
       <p>Webサーバー：Apache</p>
     </div>

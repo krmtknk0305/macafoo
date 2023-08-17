@@ -7,11 +7,9 @@ html {
 
 body {
   color: #fff;
-  font-family: "YuGothic", Yu Gothic, sans-serif;
   background-image: url(../image/smoke.jpg);
   background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
+  font-family: "YuGothic", Yu Gothic, sans-serif;
   min-height: 100vh;
 }
 
@@ -63,6 +61,7 @@ p {
   width: 90%;
   margin: 0 auto;
 }
+
 
 h1 {
   font-size: 4rem;

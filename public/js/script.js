@@ -1,3 +1,5 @@
+// 背景クロスフェード
+
 // モーダル
 $(function () {
   $('.modalopen').each(function () {

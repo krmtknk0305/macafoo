@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{{ asset('css/common.css') }}">
     <link rel="stylesheet" href="{{ asset('css/index.css') }}">
     <link rel="stylesheet" href="{{ asset('css/other.css') }}">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="{{ asset('js/jQuery-3.7.0.min.js') }}"></script>
     <script src="{{ asset('js/script.js') }}"></script>
 </head>
 <body>
@@ -18,12 +18,12 @@
             <div class="container nav-wrapper">
                 <!-- グローバルナビゲーション -->
                 <ul>
-                  <li class="nav-item"><a href="#concept">CONCEPT</a></li>
-                  <li class="nav-item"><a href="#feature">FEATURE</a></li>
-                  <li class="nav-item"><a href="#menu">MENU</a></li>
-                  <li class="nav-item"><a href="#store">STORE</a></li>
-                  <li class="nav-item"><a href="#contact">CONTACT</a></li>
-                  <li class="nav-item"><a href="#about">ABOUT</a></li>
+                  <li class="nav-item"><a href="index#concept">CONCEPT</a></li>
+                  <li class="nav-item"><a href="index#feature">FEATURE</a></li>
+                  <li class="nav-item"><a href="index#menu">MENU</a></li>
+                  <li class="nav-item"><a href="index#store">STORE</a></li>
+                  <li class="nav-item"><a href="index#contact">CONTACT</a></li>
+                  <li class="nav-item"><a href="index#about">ABOUT</a></li>
                 </ul>
                 <!-- ハンバーガーメニュー -->
             </div>
@@ -36,13 +36,13 @@
                 <a href="#" class="logo">macahoo</a>
                 <div class="sns-block">
                     <a class="mark" href="https://twitter.com/" target="_blank">
-                        <img class="sns-mark" src="./image/twitter_mark.png" alt="twitter" width="30px">
+                        <img class="sns-mark" src="./image/2021 Twitter logo - white.png" alt="twitter" width="30px">
                     </a>
                     <a class="mark" href="https://www.facebook.com/" target="_blank">
-                        <img class="sns-mark" src="./image/facebook_mark.png" alt="facebook" width="30px">
+                        <img class="sns-mark" src="./image/f_logo_RGB-White_58.png" alt="facebook" width="30px">
                     </a>
                     <a class="mark" href="https://www.instagram.com/" target="_blank">
-                        <img class="sns-mark" src="./image/instagram_mark.png" alt="instagram" width="30px">
+                        <img class="sns-mark" src="./image/Instagram_Glyph_White.png" alt="instagram" width="30px">
                     </a>
                 </div>
             </div>
