@@ -13,14 +13,6 @@ class HomeController extends Controller
   }
 
   public function create(Request $request){
-    $request->validate([
-          'yourname' => ['required|string|max:255|min:1'],
-          'yourmail' => ['required|string|email|max:255|min:4'],
-    ],[
-          'required' => 'この項目は必須です。',
-          'min' => '文字数が足りません。',
-          'max' => '文字数オーバーです（255文字以内）。',
-    ]);
     $name = $request->input('yourname');
     $mail = $request->input('yourmail');
     $main_request = $request->input('main-request');

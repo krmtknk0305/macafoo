@@ -67,17 +67,27 @@
       <h2>Menu</h2>
       <span>メニュー一覧</span>
     </div>
+    <img class="book" src="./image/book.png" width="360px">
     <p>シーシャ、マカロン、ドリンクのメニューはこちらからどうぞ。</p>
     <div class="btn-wrapper">
-      <div class="button">
-        <a href ="#">シーシャフレーバー</a>
-      </div>
-      <div class="button">
-        <a href ="#">マカロン</a>
-      </div>
-      <div class="button">
-        <a href ="#">ドリンク</a>
-      </div>
+      <a href ="#">
+        <div class="menu-btn">
+          <img src="./image/hookah-top2.png" width="200px">
+          <h3>Hookah</h3>
+        </div>
+      </a>
+      <a href ="#">
+        <div class="menu-btn">
+          <img src="./image/macarons1.png" width="200px">
+          <h3>Macaron</h3>
+        </div>
+      </a>
+      <a href ="#">
+        <div class="menu-btn">
+          <img src="./image/drink.png" width="200px">
+          <h3>Drink etc.</h3>
+        </div>
+      </a>
     </div>
   </div>
 </section>
@@ -87,19 +97,13 @@
       <div class="title recommend-title">
         <h2>Recommend</h2>
         <span>季節のおすすめセット</span>
+        <p>今季、当店の魔法使い一同からおすすめさせていただくセットは…？</p>
       </div>
     </a>
     <div class="modal-main js-modal" id="modal-recommend">
       <div class="inner">
-        <div class="recommend-set">
-          <p>■今季、当店の魔法使い一同からおすすめさせていただくセットは…？</p>
-          <h3 class="recommend-name">～怪しげ果実の芳醇セット～</h3>
-          <div class="recommend-wrapper">
-            <p><b>シーシャ</b><br>ブルーベリータルトMIX</p>
-            <p><b>マカロン</b><br>ホワイトラズベリー<br>クランベリークリーム<br>ベリーナッツモカ</p>
-          </div>
-          <p>and drink…<br><br>人間界のとある貴婦人がいらっしゃる度にご注文されたセットです。彼女は魔法に魅了され、いつしか自ら魔術を求めるようになりました。「魔法使いが作ったマカロンには魔力が宿る」、「魔女が吸ったシーシャの煙は魔除けになる」…。果たして本当でしょうか。いつしか姿を消してしまった彼女に、このセットを振舞えることを信じています。</p>
-        </div>
+        <img src="./image/recommend-img.png" width="840px">
+        <p>人間界のとある貴婦人がいらっしゃる度にご注文されたセットです。彼女は魔法に魅了され、いつしか自ら魔術を求めるようになりました。「魔法使いが作ったマカロンには魔力が宿る」、「魔女が吸ったシーシャの煙は魔除けになる」…。果たして本当でしょうか。いつしか姿を消してしまった彼女に、このセットを振舞えることを信じています。</p>
         <div class="button">
           <a class="modalClose">Close</a>
         </div>
@@ -113,6 +117,7 @@
       <h2>Store</h2>
       <span>お買い物</span>
     </div>
+    <img class="cart" src="./image/cart.png" width="320px">
     <p>シーシャフレーバーやマカロン・その他人間界では馴染みのないあれこれ、取り揃えました。</p>
     <p>今では大変便利にお買い物ができるそうですね。<br>文明の進化とは素晴らしいものです。</p>
     <div class="button store-btn">
