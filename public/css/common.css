@@ -1,18 +1,16 @@
 @charset "UTF-8";
 
-/* 基本スタイル */
-html {
-  font-size: 16px;
+.scroll-up {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(50px);
+  transition: all 1s;
 }
 
-body {
-  color: #fff;
-  background-image: url(../image/smoke.jpg);
-  background-repeat: none;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  font-family: "YuGothic", Yu Gothic, sans-serif;
+.scroll-up.is-show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
 }
 
 ul,
@@ -23,10 +21,6 @@ ol {
 
 a {
   text-decoration: none;
-  transition: 0.6s;
-}
-
-a:hover {
   transition: 0.6s;
 }
 
@@ -45,24 +39,11 @@ a:hover {
   background-color: #a83a39;
   border-radius: 3rem;
   transform: translateY(5px);
-  transition: 0.2s;
 }
 
 section {
   padding: 4rem 0 2rem 0;
 }
-
-p {
-  line-height: 180%;
-  padding: 4px 16px;
-}
-
-.container {
-  max-width: 1024px;
-  width: 90%;
-  margin: 0 auto;
-}
-
 
 h1 {
   font-size: 4rem;
@@ -75,6 +56,32 @@ h2 {
 form {
   margin: 2rem auto;
   max-width: 480px;
+}
+
+/* 画面サイズ1023px以下 */
+html {
+  font-size: 16px;
+}
+
+body {
+  color: #fff;
+  background-image: url(../image/smoke.jpg);
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "YuGothic", Yu Gothic, sans-serif;
+}
+
+p {
+  line-height: 180%;
+  padding: 4px;
+}
+
+.container {
+  max-width: 1024px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 /* グローバルナビゲーション */
@@ -141,4 +148,75 @@ footer {
 footer small {
   display: block;
   text-align: right;
+}
+
+
+@media screen and (max-width:768px) {
+
+  /* 画面サイズ：768px以下 */
+  html {
+    font-size: 14px;
+  }
+
+  body {
+    position: relative;
+  }
+
+  body::before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-image: url('../image/smoke-s.jpg');
+    background-size: cover;
+  }
+
+  section {
+    padding: 2rem 0;
+  }
+
+  p {
+    line-height: 154%;
+    padding: 2px;
+  }
+
+  .container {
+    max-width: 768px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* ハンバーガーメニュー */
+
+
+  /* フッター */
+  footer {
+    position: relative;
+    height: 100px;
+  }
+
+  .logo-wrapper {
+    padding-top: 12px;
+  }
+
+  .logo {
+    margin-right: 16px;
+  }
+
+  .mark img {
+    width: 24px;
+    margin-left: 0.4rem;
+  }
+
+}
+
+@media screen and (max-width:479px) {
+
+  /* 画面サイズ：479px */
+
+
 }

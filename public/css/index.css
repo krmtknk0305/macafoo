@@ -2,7 +2,7 @@
 
 .title {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 /* ファーストビュー */
@@ -47,46 +47,58 @@
 }
 
 /* こだわり */
-#feature {
-  position: relative;
-}
-
-.feature-image {
-  border-radius: 40%;
-  width: 400px;
-  object-fit: cover;
-  box-shadow: 0 1rem 2rem hsl(0 0% 0% / 50%);
-  transition: 0.3s;
-}
-
-.feature-image:hover {
-  transform: translateY(-8px);
+.feature-wrapper {
+  margin-bottom: 54px;
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .feature-box {
   position: relative;
-  padding-bottom: 72px;
 }
 
 .feature-text {
   position: absolute;
-  top: 80px;
-  right: 200px;
-  max-width: 40%;
-  border-bottom: 1px dashed #fff;
-  padding-right: 160px;
+  top: 72px;
+  left: 32px;
+  color: #fff;
+  border-bottom: #fff 2px dotted;
+  width: 360px;
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.feature-box:hover .feature-text {
+  opacity: 1;
+  padding-left: 40px;
+}
+
+.feature-text h3 {
+  font-size: 2rem;
+}
+
+.feature-image {
+  transition: 0.5s;
+  width: 33vw;
+}
+
+.feature-image:hover {
+  filter: brightness(40%);
 }
 
 /* メニュー */
 #menu {
-  height: 540px;
+  height: 500px;
   position: relative;
 }
 
 #menu::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 30px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -99,7 +111,7 @@
 .book {
   position: absolute;
   right: 880px;
-  top: 96px;
+  top: 48px;
   z-index: -1;
   transform: rotate(-5deg);
 }
@@ -109,6 +121,10 @@
   text-align: center;
 }
 
+.menu-img {
+  border-radius: 8rem;
+}
+
 .btn-wrapper {
   display: flex;
   flex-wrap: nowrap;
@@ -116,7 +132,7 @@
 }
 
 .menu-btn {
-  padding: 24px 4px;
+  padding: 24px 8px;
   filter: drop-shadow(0 0.5rem 1rem hsl(0 0% 0% / 60%));
   transition: all 0.3s;
   position: relative;
@@ -129,7 +145,7 @@
 .menu-btn h3 {
   position: absolute;
   top: 100px;
-  left: 60px;
+  left: 80px;
   color: #fff;
   font-size: 1.5rem;
 }
@@ -137,57 +153,69 @@
 /* おすすめ */
 .recommend-title {
   color: #fff;
-  background-image: url("../image/paper.jpg");
+  background-color: #a83a39;
   padding: 4rem;
   box-shadow: 0 1rem 2rem hsl(0 0% 0% / 50%);
-  border-radius: 4rem;
+  border-radius: 24rem;
+  max-width: fit-content;
+  margin: 0 auto 40px auto;
+  transform: skewY(-5deg);
+  transition: 0.5s;
 }
 
 .recommend-title:hover {
-  transform: translateY(-5px);
-  transition: 0.2s;
+  background-color: #fff;
+  color: #a83a39;
 }
 
 /* おすすめモーダル */
-.inner img {
-  border-radius: 2rem;
-}
-
 .modal-main {
-  position: fixed;
-  inset: 0;
   display: none;
-  background-color: rgba(0, 0, 0, 0.6);
-  top: 0;
-  z-index: 50;
-  overflow-y: scroll;
 }
 
 .inner {
-  max-width: 840px;
-  margin: 120px auto;
-  position: relative;
+  overflow-y: scroll;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.inner-content {
+  margin: 4% 0 0 0;
+  padding: 0;
+  max-width: 600px;
+}
+
+.inner-content img {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border-radius: 2rem;
 }
 
 .modalClose {
   cursor: pointer;
-  width: fit-content;
-  position: absolute;
-  right: -24px;
-  top: -44px;
 }
 
 
 /* お買い物 */
 #store {
   position: relative;
-  height: 460px;
+  height: 420px;
 }
 
 .cart {
   position: absolute;
   left: 900px;
-  top: 92px;
+  top: -40px;
   z-index: -1;
   transform: rotate(-5deg);
 }
@@ -195,7 +223,7 @@
 #store::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -30px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -330,4 +358,137 @@ textarea {
 
 #about .title {
   text-align: left;
+}
+
+@media screen and (max-width:768px) {
+
+  /* 画面サイズ：768px以下 */
+  /* このサイトについて */
+  #about .container {
+    display: block;
+  }
+
+  /* お買い物 */
+  #store {
+    position: relative;
+    height: 360px;
+  }
+
+  .cart {
+    display: none;
+  }
+
+  #store::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+  }
+
+  #store .container {
+    float: none;
+  }
+
+  .store-btn {
+    margin: 0 auto;
+    width: 320px;
+  }
+
+  /* おすすめ */
+  .recommend-title {
+    padding: 3rem;
+    border-radius: 2rem;
+  }
+
+  .recommend-title p {
+    display: none;
+  }
+
+  /* おすすめモーダル */
+  .inner {
+    width: 100vw;
+  }
+
+  .inner-content {
+    margin-top: 20%;
+    padding: 1rem;
+    max-width: 400px;
+  }
+
+  /* メニュー */
+  #menu {
+    height: 440px;
+    position: relative;
+  }
+
+  .book {
+    display: none;
+  }
+
+  #menu .container {
+    float: none;
+    text-align: center;
+    padding-top: 24px;
+  }
+
+  .menu-btn {
+    padding: 8px;
+    position: relative;
+    display: none;
+  }
+
+  .prev {
+    width: 60px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    bottom: 60px;
+    transition: all 0.3s;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  .prev::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-top: solid 3px #828282;
+    border-right: solid 3px #828282;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    position: absolute;
+    left: 24px;
+    top: 10px;
+  }
+
+  .next {
+    width: 60px;
+    height: 80px;
+    position: absolute;
+    right: 0;
+    bottom: 60px;
+    transition: all 0.3s;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  .next::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-top: solid 3px #828282;
+    border-left: solid 3px #828282;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    position: absolute;
+    left: 24px;
+    top: 10px;
+  }
+
+  .menu-btn.active {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
 }
