@@ -360,9 +360,9 @@ textarea {
   text-align: left;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:820px) {
 
-  /* 画面サイズ：768px以下 */
+  /* 画面サイズ：820px以下 */
   /* このサイトについて */
   #about .container {
     display: block;
@@ -374,18 +374,19 @@ textarea {
     height: 360px;
   }
 
-  .cart {
-    display: none;
-  }
-
   #store::before {
     content: "";
     position: absolute;
     top: -30px;
   }
 
+  .cart {
+    display: none;
+  }
+
   #store .container {
     float: none;
+    margin-top: -32px;
   }
 
   .store-btn {
@@ -393,14 +394,19 @@ textarea {
     width: 320px;
   }
 
-  /* おすすめ */
-  .recommend-title {
-    padding: 3rem;
-    border-radius: 2rem;
+  /* メニュー */
+  #menu {
+    height: 480px;
   }
 
-  .recommend-title p {
+  .book {
     display: none;
+  }
+
+  #menu .container {
+    float: none;
+    text-align: center;
+    padding-top: 24px;
   }
 
   /* おすすめモーダル */
@@ -409,15 +415,127 @@ textarea {
   }
 
   .inner-content {
-    margin-top: 20%;
+    margin-top: -200px;
     padding: 1rem;
-    max-width: 400px;
+  }
+
+  /* こだわり */
+  .feature-text {
+    opacity: 1;
+    width: 160px;
+  }
+
+  .feature-text h3 {
+    font-size: 1rem;
+  }
+
+  .feature-image {
+    filter: brightness(60%);
+  }
+
+  /* ハンバーガーボタン  */
+
+  .menu-trigger span:nth-child(1) {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    border-bottom: 3px solid #fff;
+    right: 24px;
+    top: -18px;
+    transition: all 0.3s;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  .menu-trigger span:nth-child(2) {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    border-bottom: 3px solid #fff;
+    right: 24px;
+    top: -4px;
+    transition: all 0.3s;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  .menu-trigger span:nth-child(3) {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    border-bottom: 3px solid #fff;
+    right: 24px;
+    top: 8px;
+    transition: all 0.3s;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  .menu-trigger.active span:nth-child(1) {
+    top: 0;
+    right: 9px;
+    transform: rotate(45deg);
+  }
+
+  .menu-trigger.active span:nth-child(2),
+  .menu-trigger.active span:nth-child(3) {
+    top: 0;
+    right: 35px;
+    transform: rotate(-45deg);
+  }
+
+  .g-navi {
+    transform: translateY(-100%);
+    transition: .5s ease-in-out;
+    display: block;
+    position: fixed;
+    z-index: 2;
+    padding-top: 64px;
+    height: 100vh;
+  }
+
+  .g-navi ul {
+    display: block;
+  }
+
+  .g-navi.active {
+    transform: translateY(0%);
+    transition: .5s ease-in-out;
+  }
+}
+
+@media screen and (max-width:479px) {
+
+  /* 画面サイズが479px以下はここを読み込む */
+  /* こだわり */
+  .feature-wrapper {
+    margin-bottom: 0px;
+    display: contents;
+  }
+
+  .feature-text {
+    opacity: 1;
+    width: 160px;
+  }
+
+  .feature-text h3 {
+    font-size: 1rem;
+  }
+
+  .feature-image {
+    width: 100vw;
+    margin: -4px calc(50% - 50vw);
+    filter: brightness(60%);
   }
 
   /* メニュー */
   #menu {
     height: 440px;
     position: relative;
+  }
+
+  #menu::before {
+    opacity: 0.5;
   }
 
   .book {
@@ -452,8 +570,8 @@ textarea {
     display: block;
     width: 15px;
     height: 15px;
-    border-top: solid 3px #828282;
-    border-right: solid 3px #828282;
+    border-top: solid 3px #666;
+    border-right: solid 3px #666;
     -webkit-transform: rotate(-135deg);
     transform: rotate(-135deg);
     position: absolute;
@@ -477,8 +595,8 @@ textarea {
     display: block;
     width: 15px;
     height: 15px;
-    border-top: solid 3px #828282;
-    border-left: solid 3px #828282;
+    border-top: solid 3px #666;
+    border-left: solid 3px #666;
     -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
     position: absolute;
@@ -490,5 +608,31 @@ textarea {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+  }
+
+  /* おすすめ */
+  .recommend-title {
+    padding: 3rem;
+    border-radius: 2rem;
+  }
+
+  .recommend-title p {
+    display: none;
+  }
+
+  /* おすすめモーダル */
+  .inner {
+    width: 100vw;
+  }
+
+  .inner-content {
+    margin-top: 40px;
+    padding: 1rem;
+    max-width: 400px;
+  }
+
+  /* お買い物 */
+  #store::before {
+    opacity: 0.5;
   }
 }

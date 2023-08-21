@@ -120,6 +120,7 @@ footer {
   position: relative;
   height: 120px;
   background-color: #5c4339;
+  bottom: 0;
 }
 
 .logo-wrapper {
@@ -190,9 +191,6 @@ footer small {
     margin: 0 auto;
   }
 
-  /* ハンバーガーメニュー */
-
-
   /* フッター */
   footer {
     position: relative;
@@ -211,12 +209,5 @@ footer small {
     width: 24px;
     margin-left: 0.4rem;
   }
-
-}
-
-@media screen and (max-width:479px) {
-
-  /* 画面サイズ：479px */
-
 
 }

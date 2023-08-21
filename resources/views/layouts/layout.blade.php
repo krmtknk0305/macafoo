@@ -25,9 +25,14 @@
                   <li class="nav-item"><a href="index#contact">CONTACT</a></li>
                   <li class="nav-item"><a href="index#about">ABOUT</a></li>
                 </ul>
-                <!-- ハンバーガーメニュー -->
             </div>
         </nav>
+        <!-- ハンバーガーメニュー -->
+        <div class="menu-trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
   @yield('content')
     <footer>
