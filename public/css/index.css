@@ -364,6 +364,11 @@ textarea {
 
   /* 画面サイズ：820px以下 */
   /* このサイトについて */
+
+  html {
+    font-size: 12px;
+  }
+
   #about .container {
     display: block;
   }

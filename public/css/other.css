@@ -6,6 +6,10 @@
   margin: 64px 0;
 }
 
+#confirm {
+  height: 90vh;
+}
+
 .form-confirm {
   max-width: 50%;
   margin: 0 auto;
@@ -28,10 +32,61 @@
 }
 
 #complete {
-  min-height: 100vh;
+  height: 90vh;
 }
 
 #complete .button {
   width: fit-content;
   margin: 0 auto;
+}
+
+@media screen and (max-width:479px) {
+
+  /* 画面サイズ：479px以下 */
+  html {
+    font-size: 12px;
+  }
+
+  .form-confirm {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .confirm-btn {
+    display: block;
+  }
+
+  #confirm .send-button {
+    margin: 24px auto;
+  }
+
+  #complete .button {
+    width: fit-content;
+    margin: 8px auto;
+  }
+}
+
+/* 管理画面 */
+
+table {
+  width: 90vw;
+  margin: 0 auto;
+  text-align: left;
+}
+
+table th {
+  text-align: left;
+}
+
+table td {
+  word-wrap: break-word;
+  border: 1px solid #b1b1b1;
+}
+
+table a {
+  text-decoration: none;
+}
+
+table tr td:nth-child(5) {
+  width: 20px;
 }

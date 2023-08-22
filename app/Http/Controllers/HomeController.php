@@ -57,4 +57,14 @@ class HomeController extends Controller
 
     return view('send');
   }
+
+  public function administrator(){
+    $list =DB::table('contacts')
+            ->select('name', 'mail', 'title', 'about', 'created_at')
+            ->orderBy('created_at','desc')
+            ->get();
+            return view('administrator', ['list'=>$list]);
+  }
+
+
 }
