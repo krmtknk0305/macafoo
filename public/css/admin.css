@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+/* 管理画面 */
+body {
+  width: 100vw;
+}
+
+header {
+  background-color: #c4ac6e;
+  height: 12vh;
+  text-align: center;
+}
+
+h1 {
+  position: absolute;
+  top: 20px;
+  right: 60px;
+  padding: 1rem;
+  background-color: #c4ac6e;
+  color: #fff;
+  width: 300px;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  text-align: right;
+  background-color: #c4ac6e;
+  color: #fff;
+  height: 4vh;
+}
+
+footer small {
+  margin-right: 4rem;
+}
+
+#admin {
+  width: 100vw;
+  padding-top: 3rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 90vw;
+  margin: 0 auto;
+  text-align: left;
+}
+
+table th {
+  text-align: left;
+  padding: 0.4rem;
+  color: #b1b1b1;
+}
+
+table td {
+  word-wrap: break-word;
+  padding: 0.8rem;
+  background-color: #fff;
+}
+
+table a {
+  text-decoration: none;
+  color: #b1b1b1;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 8px 16px;
+  border-radius: 1rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+table tr td:nth-child(6) {
+  width: 100px;
+}

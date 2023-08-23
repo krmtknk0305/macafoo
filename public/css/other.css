@@ -65,28 +65,3 @@
     margin: 8px auto;
   }
 }
-
-/* 管理画面 */
-
-table {
-  width: 90vw;
-  margin: 0 auto;
-  text-align: left;
-}
-
-table th {
-  text-align: left;
-}
-
-table td {
-  word-wrap: break-word;
-  border: 1px solid #b1b1b1;
-}
-
-table a {
-  text-decoration: none;
-}
-
-table tr td:nth-child(5) {
-  width: 20px;
-}
