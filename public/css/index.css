@@ -49,9 +49,10 @@
 /* こだわり */
 .feature-wrapper {
   margin-bottom: 54px;
-  display: grid;
-  justify-content: space-evenly;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+
 }
 
 .feature-box {
@@ -82,7 +83,8 @@
 
 .feature-image {
   transition: 0.5s;
-  width: 33vw;
+  flex-shrink: 0;
+  width: 500px;
 }
 
 .feature-image:hover {
@@ -93,6 +95,7 @@
 #menu {
   height: 500px;
   position: relative;
+  text-align: end;
 }
 
 #menu::before {
@@ -108,17 +111,20 @@
   z-index: -10;
 }
 
+#menu p {
+  margin-right: 92px;
+}
+
+#menu .title {
+  margin-left: 400px;
+}
+
 .book {
   position: absolute;
-  right: 880px;
+  right: 680px;
   top: 48px;
   z-index: -1;
   transform: rotate(-5deg);
-}
-
-#menu .container {
-  float: right;
-  text-align: center;
 }
 
 .menu-img {
@@ -128,7 +134,7 @@
 .btn-wrapper {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .menu-btn {
@@ -209,12 +215,13 @@
 /* お買い物 */
 #store {
   position: relative;
-  height: 420px;
+  height: 480px;
+  text-align: start;
 }
 
 .cart {
   position: absolute;
-  left: 900px;
+  left: 580px;
   top: -40px;
   z-index: -1;
   transform: rotate(-5deg);
@@ -234,13 +241,19 @@
 }
 
 #store .container {
-  float: left;
   text-align: center;
   padding-bottom: 80px;
 }
 
+#store .title,
+#store p {
+  margin-right: 400px;
+}
+
 .store-btn {
-  margin: 24px auto 0 auto;
+  margin-top: 24px;
+  margin-left: 148px;
+
   width: 320px;
 }
 
@@ -382,7 +395,15 @@ textarea {
   #store::before {
     content: "";
     position: absolute;
-    top: -30px;
+  }
+
+  #store .title {
+    margin-top: 40px;
+    margin-right: 0;
+  }
+
+  #store p {
+    margin: 0;
   }
 
   .cart {
@@ -390,29 +411,16 @@ textarea {
   }
 
   #store .container {
-    float: none;
     margin-top: -32px;
+    text-align: center;
   }
 
   .store-btn {
     margin: 0 auto;
     width: 320px;
+    padding-top: 30px;
   }
 
-  /* メニュー */
-  #menu {
-    height: 480px;
-  }
-
-  .book {
-    display: none;
-  }
-
-  #menu .container {
-    float: none;
-    text-align: center;
-    padding-top: 24px;
-  }
 
   /* おすすめモーダル */
   .inner {
@@ -425,6 +433,10 @@ textarea {
   }
 
   /* こだわり */
+  .feature-image {
+    width: 260px;
+  }
+
   .feature-text {
     opacity: 1;
     width: 160px;
@@ -436,6 +448,35 @@ textarea {
 
   .feature-image {
     filter: brightness(60%);
+  }
+
+  /* メニュー */
+  #menu .title {
+    margin-top: 24px;
+    margin-left: 0;
+  }
+
+  #menu p {
+    margin-right: 0;
+  }
+
+  #menu {
+    height: 480px;
+    margin-right: 0;
+  }
+
+  .book {
+    display: none;
+  }
+
+  #menu .container {
+    padding-top: 24px;
+    text-align: center;
+  }
+
+  .btn-wrapper {
+    display: flex;
+    margin-right: 24px;
   }
 
   /* ハンバーガーボタン  */
@@ -539,6 +580,11 @@ textarea {
     position: relative;
   }
 
+  #menu p {
+    margin-left: -14px;
+    width: 100vw;
+  }
+
   #menu::before {
     opacity: 0.5;
   }
@@ -548,8 +594,6 @@ textarea {
   }
 
   #menu .container {
-    float: none;
-    text-align: center;
     padding-top: 24px;
   }
 
@@ -557,6 +601,7 @@ textarea {
     padding: 8px;
     position: relative;
     display: none;
+    margin-right: 40px;
   }
 
   .prev {
@@ -612,7 +657,7 @@ textarea {
   .menu-btn.active {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   /* おすすめ */
